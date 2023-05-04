@@ -6,12 +6,12 @@
         <type value="RUNNING_DEVICE_TARGET" />
         <deviceKey>
           <Key>
-            <type value="VIRTUAL_DEVICE_PATH" />
-            <value value="C:\Users\Sambav\.android\avd\GoogleMaps-1Pixel_2_API_30.avd" />
+            <type value="SERIAL_NUMBER" />
+            <value value="d038e577" />
           </Key>
         </deviceKey>
       </Target>
     </runningDeviceTargetSelectedWithDropDown>
-    <timeTargetWasSelectedWithDropDown value="2023-05-04T12:38:19.744065900Z" />
+    <timeTargetWasSelectedWithDropDown value="2023-05-04T12:47:03.247977200Z" />
   </component>
 </project>

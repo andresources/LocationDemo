@@ -99,10 +99,18 @@ public class MainActivity extends AppCompatActivity {
     LocationCallback mLocationCallback=new LocationCallback(){
         @Override
         public void onLocationResult(LocationResult locationResult) {
-            Location loc=locationResult.getLastLocation();
+            //Location loc=locationResult.getLastLocation();
+            Location loc = locationResult.getLocations().get(0);
             double lat=loc.getLatitude();
             double lng=loc.getLongitude();
             Toast.makeText(MainActivity.this, lat+" : "+lng, Toast.LENGTH_SHORT).show();
         }
     };
+    @Override
+    public void onStop() {
+        super.onStop();
+        if (mFusedLocationProviderClient != null) {
+            mFusedLocationProviderClient.removeLocationUpdates(mLocationCallback);
+        }
+    }
 }
